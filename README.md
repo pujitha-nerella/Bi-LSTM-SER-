@@ -1,4 +1,4 @@
-##Project Overview
+## Project Overview
 This project focuses on **Speech Emotion Recognition (SER)** using a hybrid deep learning architecture combining **BiLSTM** and **self-attention**. The goal is to classify emotions from speech by leveraging powerful **pretrained transformer-based models** for feature extraction.
 ##Models Used for Feature Extraction
 The following **self-supervised pretrained models** were used to extract high-dimensional acoustic embeddings:
