@@ -2,7 +2,6 @@
 This project focuses on **Speech Emotion Recognition (SER)** using a hybrid deep learning architecture combining **BiLSTM** and **self-attention**. The goal is to classify emotions from speech by leveraging powerful **pretrained transformer-based models** for feature extraction.
 ## Models Used for Feature Extraction
 
-The following **self-supervised pretrained models** were used to extract high-dimensional acoustic embeddings:
 * **WavLM-Large**
 * **HuBERT-XLarge**
 * **Whisper-Large**
@@ -10,7 +9,6 @@ The following **self-supervised pretrained models** were used to extract high-di
 * **XLSR-53**
 * **Data2Vec Audio-Large**
 
-Each model captures rich prosodic and semantic features from raw audio inputs.
 ## Data Preprocessing
 To ensure high-quality inputs, the following steps were applied:
 * **Wiener Filtering** – Reduces background noise
@@ -18,14 +16,14 @@ To ensure high-quality inputs, the following steps were applied:
 * **Voice Activity Detection (VAD)** – Removes silences
 * **Resampling** – Standardizes audio sampling rates
 ## Data Augmentation
-To improve generalization and combat class imbalance:
+
 * **Time Shift**
 * **Pitch Shift**
 * **Gaussian Noise Addition**
 * **Time Stretch**
 * **Gain Adjustment**
-These augmentations simulate real-world variations in speech.
-##Model Architecture
+
+## Model Architecture
 * **BiLSTM**: Captures forward and backward temporal dependencies.
 * **Self-Attention Mechanism**: Focuses on emotionally salient segments in the speech.
 * **Fully Connected Layers**: Classify into one of the emotion categories (e.g., Happy, Sad, Angry, etc.).
